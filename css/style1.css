@@ -1,0 +1,41 @@
+#topbt {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0d48a1CC;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50px;
+  }
+  
+  #topbt:hover {
+    background-color: #1565C0CC;
+  }
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #004E38;
+}
+.main{
+  margin-top: 80px;
+  color: #004E38;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.btext{ 
+  text-align: justify;
+}
+.btndiv{
+  
+}
+button{
+  width: 70px;
+  background-color: #004E38;
+  color: white;border-radius: 15px;
+}
