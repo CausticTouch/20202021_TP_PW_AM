@@ -33,6 +33,15 @@
 }
 .btext{ 
   text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+h2,h5{
+  font-weight: bold;
+}
+h5{
+  margin-left: 10px;
 }
 .btndiv{
   text-align: center;
@@ -53,4 +62,7 @@ button{
   padding: auto;
   width: auto;
   height: auto;
+}
+table{
+  margin: 15px;
 }
