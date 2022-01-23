@@ -15,6 +15,7 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/style1.css">
+  <script src="jss/scriptJava.js"></script>
   <title>Saldo</title>
 </head>
 
@@ -43,7 +44,7 @@
             Saldo
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="saldo.html">Saldo Currente: 0.00 €</a>
+            <a class="dropdown-item" id="dropdown-item1" href="saldo.html">Saldo Currente: 0.00 €</a>
           </div>
         </li>
       </ul>
@@ -91,12 +92,12 @@
       <stron>Quer adicionar fundos?</stron>
     </h5>
     <div class="btndiv">
-      <button id="+0.50">+0.50€</button>
-      <button id="+1">+1€</button>
-      <button id="+2">+2€</button>
-      <button id="+5">+5€</button>
-      <button id="+10">+10€</button>
-      <button id="+20">+20€</button>
+      <button id="+0.50" onclick="incrementSaldo(0.50)">+0.50€</button>
+      <button id="+1" onclick="incrementSaldo(1)">+1€</button>
+      <button id="+2" onclick="incrementSaldo(2)">+2€</button>
+      <button id="+5" onclick="incrementSaldo(5)">+5€</button>
+      <button id="+10" onclick="incrementSaldo(10)">+10€</button>
+      <button id="+20" onclick="incrementSaldo(20)">+20€</button>
     </div>
   </div>
 </body>

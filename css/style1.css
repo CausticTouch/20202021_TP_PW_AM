@@ -23,6 +23,7 @@
   position: fixed;
   top: 0;
   background-color: #004E38;
+  z-index: 99999;
 }
 .main{
   margin-top: 80px;
@@ -161,8 +162,8 @@ input:checked ~ label:hover ~ label {
   cursor: pointer;
 }
 #foodimg{
-  height: auto;
+  height: 200px;
   width: 200px;
-  object-fit: scale-down;
+  object-fit: fill;
   border-radius: 20px;
 }
