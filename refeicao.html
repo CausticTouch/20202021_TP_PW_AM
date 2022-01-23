@@ -1,204 +1,235 @@
 <html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style1.css">
-        <title>Reservar refeição</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://ipca.pt/"><img id="ipcalogo" class="img-fluid.max-width: 40px; height: auto;" src="images/IPCA-Logo_rgb_v2.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Pratos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ementa.html">Ementa semanal</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="refeicao.html">Reservar refeição</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Saldo
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="saldo.html">Saldo Currente: 0.00 €</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        <button onclick="topFunction()" id="topbt"><img src="images/baseline_keyboard_arrow_up_white_24dp.png"></button>
-        <script>
-            var button = document.getElementById("topbt");
 
-            window.onscroll = function() {scrollFunction()};
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="css/style1.css">
+  <title>Reservar refeição</title>
+</head>
 
-            function scrollFunction() {
-            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.style.display = "block";
-            }else {
-                button.style.display = "none";
-                }
-            }
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://ipca.pt/"><img id="ipcalogo" class="img-fluid.max-width: 40px; height: auto;"
+        src="images/IPCA-Logo_rgb_v2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Pratos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ementa.html">Ementa semanal</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="refeicao.html">Reservar refeição</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Saldo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="saldo.html">Saldo Currente: 0.00 €</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <button onclick="topFunction()" id="topbt"><img src="images/baseline_keyboard_arrow_up_white_24dp.png"></button>
+  <script>
+    var button = document.getElementById("topbt");
 
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-        <div class="main">
-          <h2>Cantina</h2>
-          <img id="cantinaimg" src="images/4.jpg">
-          <div class="btext">
-            A Cantina do Campus do IPCA está em pleno funcionamento, com garantia do cumprimento de todas as regras de segurança previstas para espaços com este objetivo, designadamente quanto à lotação, corredores de circulação e distância física entre as pessoas.<br>
-            <br>
-            O acesso ao serviço de refeições na Cantina do Campus do IPCA obedece aos seguintes procedimentos:
-          </div>
-          <h2>Take Away</h2>
-          <img id="takeimg" src="images/image001.jpg">
-          <div class="btext">
-            De forma a minimizar o impacto da redução da capacidade de lugares sentados na Cantina do Campus do IPCA, a partir do dia 24 de setembro o serviço de refeições passará a estar, também, disponível na modalidade de take away, de forma a que os utentes possam adquirir a refeição e consumi-la noutro local.
-          </div>
-          <div class="btext">
-            As refeições take away são colocadas em recipientes próprios para transporte e têm a seguinte composição:
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-transparent">
-                – sopa;
-              </li>
-              <li class="list-group-item bg-transparent">
-                – prato (um dos pratos da Cantina);
-              </li>
-              <li class="list-group-item bg-transparent">
-                – 1 peça de fruta;
-              </li>
-              <li class="list-group-item bg-transparent">
-                – pão.
-              </li>
-            </ul>
-            As regras para a aquisição, levantamento e preço das refeições take away são as que a seguir se apesentam:
-          </div>
-          <h5>AQUISIÇÃO DE REFEIÇÕES TAKE AWAY</h5>
-          <div class="btext">
-            A aquisição de refeições take away é realizada na plataforma SASocial, com acesso em <a href="https://portal.sas.ipca.pt">https://portal.sas.ipca.pt</a>, sendo que o saldo da conta corrente permite a aquisição das refeições da linha de self e take away.
-            <br>
-            <br>
-            Todas as funcionalidades da plataforma SASocial para a aquisição das refeições na linha de self aplicam-se às refeição take away, nomeadamente, a visualização dos pratos disponíveis para take away, a anulação de refeições take away adquiridas e o número máximo de refeições (3 refeições).
-            <br>
-            <br>
-            Sugerimos a leitura do email “Aquisição de refeições na plataforma SASocial a partir de 23 de setembro” para esclarecimentos de como proceder.
-          </div>
-          <h2>Horário</h2>
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <div class="main">
+    <h2>Cantina</h2>
+    <img id="cantinaimg" src="images/4.jpg">
+    <div class="btext">
+      A Cantina do Campus do IPCA está em pleno funcionamento, com garantia do cumprimento de todas as regras de
+      segurança previstas para espaços com este objetivo, designadamente quanto à lotação, corredores de circulação e
+      distância física entre as pessoas.<br>
+      <br>
+      O acesso ao serviço de refeições na Cantina do Campus do IPCA obedece aos seguintes procedimentos:
+    </div>
+    <h2>Take Away</h2>
+    <img id="takeimg" src="images/image001.jpg">
+    <div class="btext">
+      De forma a minimizar o impacto da redução da capacidade de lugares sentados na Cantina do Campus do IPCA, a partir
+      do dia 24 de setembro o serviço de refeições passará a estar, também, disponível na modalidade de take away, de
+      forma a que os utentes possam adquirir a refeição e consumi-la noutro local.
+    </div>
+    <div class="btext">
+      As refeições take away são colocadas em recipientes próprios para transporte e têm a seguinte composição:
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent">
+          – sopa;
+        </li>
+        <li class="list-group-item bg-transparent">
+          – prato (um dos pratos da Cantina);
+        </li>
+        <li class="list-group-item bg-transparent">
+          – 1 peça de fruta;
+        </li>
+        <li class="list-group-item bg-transparent">
+          – pão.
+        </li>
+      </ul>
+      As regras para a aquisição, levantamento e preço das refeições take away são as que a seguir se apesentam:
+    </div>
+    <h5>AQUISIÇÃO DE REFEIÇÕES TAKE AWAY</h5>
+    <div class="btext">
+      A aquisição de refeições take away é realizada na plataforma SASocial, com acesso em <a
+        href="https://portal.sas.ipca.pt">https://portal.sas.ipca.pt</a>, sendo que o saldo da conta corrente permite a
+      aquisição das refeições da linha de self e take away.
+      <br>
+      <br>
+      Todas as funcionalidades da plataforma SASocial para a aquisição das refeições na linha de self aplicam-se às
+      refeição take away, nomeadamente, a visualização dos pratos disponíveis para take away, a anulação de refeições
+      take away adquiridas e o número máximo de refeições (3 refeições).
+      <br>
+      <br>
+      Sugerimos a leitura do email “Aquisição de refeições na plataforma SASocial a partir de 23 de setembro” para
+      esclarecimentos de como proceder.
+    </div>
+    <h2>Horário</h2>
+    <br>
+    <h5>LEVANTAMENTO DAS REFEIÇÕES TAKE AWAY</h5>
+    <div class="btext">
+      As refeições take away são entregues na linha de self, a seguir ao computador, e o circuito é o mesmo das
+      refeições consumidas na Cantina (fila única para refeições self-service e take away) O levantamento das refeições
+      take away obedece ao mesmo horário das refeições da Cantina, a saber:
+    </div>
+    <table class="table">
+      <tr>
+        <td></td>
+        <td>Dias úteis</td>
+        <td>Sábados</td>
+      </tr>
+      <tr>
+        <td>Almoço</td>
+        <td>encerrado</td>
+        <td>encerrado</td>
+      </tr>
+      <tr>
+        <td>Jantar</td>
+        <td>encerrado</td>
+        <td>encerrado</td>
+      </tr>
+    </table>
+    <h5>ANULAÇÃO DAS REFEIÇÕES TAKE AWAY</h5>
+    <div class="btext">
+      A anulação de refeições take away obedece ao seguinte horário (idêntico aos horários das refeições da Cantina):
+    </div>
+    <table class="table">
+      <tr>
+        <td></td>
+        <td>Almoço</td>
+        <td>Jantar</td>
+      </tr>
+      <tr>
+        <td>Horário Anulação</td>
+        <td>até às 10h30 do próprio dia</td>
+        <td>até às 17h30 do próprio dia</td>
+      </tr>
+    </table>
+    <h5>REFEIÇÕES TAKE AWAY ADQUIRIDAS E NÃO CONSUMIDAS NEM ANULADAS</h5>
+    <div class="btext">
+      Não é possível haver devolução de dinheiro nas refeições take away adquiridas por pré-marcação ou adquiridas sem
+      pré-marcação e que não sejam consumidas nem anuladas.
+    </div>
+    <div class="btext">
+      Em período de férias escolares, Natal, Páscoa e verão, de acordo com o calendário escolar, poderá haver alterações
+      de horário.
+      <br>
+      <br>
+      Nota: Qualquer alteração será comunicada através dos meios de publicitação existentes.
+    </div>
+    <h2>Preço</h2>
+    <br>
+    <h5>PREÇO DAS REFEIÇÕES TAKE AWAY</h5>
+    <div class="btext">
+      As refeições take away têm um acréscimo de 0,80€ para embalagens, face às refeições consumidas na Cantina. Assim,
+      os preços das refeições take away são os seguintes, para pré-marcação e compra “Na hora”, respetivamente:
+    </div>
+    <table class="table">
+      <tr>
+        <td id="dectd"></td>
+        <td>Preço</td>
+        <td>Almoço</td>
+        <td>Jantar</td>
+      </tr>
+      <tr>
+        <td id="dectd"><strong>Pré-marcação</strong>
           <br>
-          <h5>LEVANTAMENTO DAS REFEIÇÕES TAKE AWAY</h5>
-          <div class="btext">
-            As refeições take away são entregues na linha de self, a seguir ao computador, e o circuito é o mesmo das refeições consumidas na Cantina (fila única para refeições self-service e take away) O levantamento das refeições take away obedece ao mesmo horário das refeições da Cantina, a saber:
-          </div>
-          <table class="table">
-            <tr>
-              <td></td>
-              <td>Dias úteis</td>
-              <td>Sábados</td>
-            </tr>
-            <tr>
-              <td>Almoço</td>
-              <td>encerrado</td>
-              <td>encerrado</td>
-            </tr>
-            <tr>
-              <td>Jantar</td>
-              <td>encerrado</td>
-              <td>encerrado</td>
-            </tr>
-          </table>
-          <h5>ANULAÇÃO DAS REFEIÇÕES TAKE AWAY</h5>
-          <div class="btext">
-            A anulação de refeições take away obedece ao seguinte horário (idêntico aos horários das refeições da Cantina):
-          </div>
-          <table class="table">
-            <tr>
-              <td></td>
-              <td>Almoço</td>
-              <td>Jantar</td>
-            </tr>
-            <tr>
-              <td>Horário Anulação</td>
-              <td>até às 10h30 do próprio dia</td>
-              <td>até às 17h30 do próprio dia</td>
-            </tr>
-          </table>
-          <h5>REFEIÇÕES TAKE AWAY ADQUIRIDAS E NÃO CONSUMIDAS NEM ANULADAS</h5>
-          <div class="btext">
-            Não é possível haver devolução de dinheiro nas refeições take away adquiridas por pré-marcação ou adquiridas sem pré-marcação e que não sejam consumidas nem anuladas.
-          </div>
-          <div class="btext">
-            Em período de férias escolares, Natal, Páscoa e verão, de acordo com o calendário escolar, poderá haver alterações de horário.
-            <br>
-            <br>
-            Nota: Qualquer alteração será comunicada através dos meios de publicitação existentes.
-          </div>
-          <h2>Preço</h2>
+          (Reserva e escolha antecipada da refeição entre os pratos disponibilizados na ementa para a modalidade de take
+          away)
+        </td>
+        <td>3,30€</td>
+        <td>até às 6h59 do próprio dia</td>
+        <td>até às 11h59 do próprio dia</td>
+      </tr>
+      <tr>
+        <td id="dectd"><strong>Compra “Na Hora”</strong>
           <br>
-          <h5>PREÇO DAS REFEIÇÕES TAKE AWAY</h5>
-          <div class="btext">
-            As refeições take away têm um acréscimo de 0,80€ para embalagens, face às refeições consumidas na Cantina. Assim, os preços das refeições take away são os seguintes, para pré-marcação e compra “Na hora”, respetivamente:
-          </div>
-          <table class="table">
-            <tr>
-              <td id="dectd"></td>
-              <td>Preço</td>
-              <td>Almoço</td>
-              <td>Jantar</td>
-            </tr>
-            <tr>
-              <td id="dectd"><strong>Pré-marcação</strong>
-                <br>
-                (Reserva e escolha antecipada da refeição entre os pratos disponibilizados na ementa para a modalidade de take away)
-              </td>
-              <td>3,30€</td>
-              <td>até às 6h59 do próprio dia</td>
-              <td>até às 11h59 do próprio dia</td>
-            </tr>
-            <tr>
-              <td id="dectd"><strong>Compra “Na Hora”</strong>
-                <br>
-                (Refeições adquiridas sem pré-marcação)
-              </td>
-              <td>4,55€</td>
-              <td>entre as 7h00 e as 14h30 do próprio dia</td>
-              <td>entre as 12h00 e as 21h00 do próprio dia</td>
-            </tr>
-          </table>
-          <div class="btext">
-            O carregamento do plafond deverá ser sempre feito no Bar da Cantina.
-          </div>
-          <h5>REFEIÇÕES TAKE AWAY ADQUIRIDAS E NÃO CONSUMIDAS NEM ANULADAS</h5>
-          <div class="btext">
-            Não é possível haver devolução de dinheiro nas refeições take away adquiridas por pré-marcação ou adquiridas sem pré-marcação e que não sejam consumidas nem anuladas.
-          </div>
-          <div class="btext">
-            Para esclarecimentos adicionais, por favor, contacte os SASIPCA:
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                > Email: <a href="mailto: sas@ipca.pt">sas@ipca.pt</a>
-              </li>
-              <li class="list-group-item">
-                > Telefone: 253 802 503
-              </li>
-            </ul>
-          </div>
-          <div class="btndiv">
-            <button id="refeicao">Marcar Refeição</button>
-          </div>
-        </div>
-    </body>
+          (Refeições adquiridas sem pré-marcação)
+        </td>
+        <td>4,55€</td>
+        <td>entre as 7h00 e as 14h30 do próprio dia</td>
+        <td>entre as 12h00 e as 21h00 do próprio dia</td>
+      </tr>
+    </table>
+    <div class="btext">
+      O carregamento do plafond deverá ser sempre feito no Bar da Cantina.
+    </div>
+    <h5>REFEIÇÕES TAKE AWAY ADQUIRIDAS E NÃO CONSUMIDAS NEM ANULADAS</h5>
+    <div class="btext">
+      Não é possível haver devolução de dinheiro nas refeições take away adquiridas por pré-marcação ou adquiridas sem
+      pré-marcação e que não sejam consumidas nem anuladas.
+    </div>
+    <div class="btext">
+      Para esclarecimentos adicionais, por favor, contacte os SASIPCA:
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          > Email: <a href="mailto: sas@ipca.pt">sas@ipca.pt</a>
+        </li>
+        <li class="list-group-item">
+          > Telefone: 253 802 503
+        </li>
+      </ul>
+    </div>
+    <div class="btndiv">
+      <button id="refeicao">Marcar Refeição</button>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -160,3 +160,9 @@ input:checked ~ label:hover ~ label {
   text-decoration: none;
   cursor: pointer;
 }
+#foodimg{
+  height: auto;
+  width: 200px;
+  object-fit: scale-down;
+  border-radius: 20px;
+}

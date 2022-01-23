@@ -1,136 +1,169 @@
 <html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style1.css">
-        <title>Ementa semanal</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://ipca.pt/"><img id="ipcalogo" class="img-fluid.max-width: 40px; height: auto;" src="images/IPCA-Logo_rgb_v2.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Pratos</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="ementa.html">Ementa semanal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="refeicao.html">Reservar refeição</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Saldo
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="saldo.html">Saldo Currente: 0.00 €</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        <button onclick="topFunction()" id="topbt"><img src="images/baseline_keyboard_arrow_up_white_24dp.png"></button>
-        <script>
-          var button = document.getElementById("topbt");
 
-          window.onscroll = function() {scrollFunction()};
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="css/style1.css">
+  <title>Ementa semanal</title>
+</head>
 
-          function scrollFunction() {
-            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              button.style.display = "block";
-            }else {
-              button.style.display = "none";
-            }
-          }
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://ipca.pt/"><img id="ipcalogo" class="img-fluid.max-width: 40px; height: auto;"
+        src="images/IPCA-Logo_rgb_v2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Pratos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="ementa.html">Ementa semanal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="refeicao.html">Reservar refeição</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Saldo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="saldo.html">Saldo Currente: 0.00 €</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <button onclick="topFunction()" id="topbt"><img src="images/baseline_keyboard_arrow_up_white_24dp.png"></button>
+  <script>
+    var button = document.getElementById("topbt");
 
-          function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          }
-        </script>
-        <div class="main">
-          <h2>Horário Semanal de Refeições</h2>
-          <table class="table">
-            <tr>
-              <td></td>
-              <td>Segunda</td>
-              <td>Terça</td>
-              <td>Quarta</td>
-              <td>Quinta</td>
-              <td>Sexta</td>
-              <td>Sabado</td>
-              <td>Domingo</td>
-            </tr>
-            <tr>
-              <td>12:00 até<br>14:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>19:00 até<br>21:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-          <h2>Alimentação</h2>
-          <div class="btext">
-            Os SASIPCA garantem aos estudantes do IPCA o acesso a serviços de alimentação, através de unidades alimentares – cantina e bares – onde são comercializados produtos a preços mais reduzidos que as empresas privadas similares, não deixando, no entanto, de ter como objetivo principal o grau de satisfação dos utentes e a garantia do cumprimento rigoroso das obrigações, bem como o cumprimento de todas as normas de higiene e segurança inerente ao funcionamento de serviços desta natureza.
-          </div>
-          <h5>Cantina</h5>
-          <div class="btext">
-            O Campus do IPCA dispõe de uma cantina situada no Edifício dos SASIPCA que disponibiliza almoços e jantares todos os dias úteis e almoços aos sábados e o Polo de Braga possui um refeitório que serve almoços de 2.ª a 6.ª feira. As refeições contemplam a opção de prato de carne, prato de peixe, prato de dieta e vegetariano. A refeição tem o preço de 2,50€ (compra antecipada). Pode haver compra de senha de refeição “na hora”, pelo valor de 3,75€.<br>
-            Para <strong>adquirir senha de refeição</strong>, o estudante deverá primeiro carregar o seu plafond no Cantina (carregamento mínimo 5€) e depois aceder à plataforma de aquisição de refeições, procedendo da seguinte forma:
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                > Aceder ao site dos Serviços de Ação Social http://www.sas.ipca.pt, –» link daalimentação; –» link cantina; –» link Aquisição de Senha (lado direito da página)
-              </li>
-              <li class="list-group-item">
-                > Autenticar-se, usando os dados de autenticação da sua conta do IPCA;
-              </li>
-              <li class="list-group-item">
-                > Para escolher a refeição, definir: Cantina, Data, Tipo de refeição e Prato;
-              </li>
-              <li class="list-group-item">
-                > Terminar o processo com “Confirmar”, “Guardar” e “Finalizar”.
-              </li>
-            </ul>
-          </div>
-          <div class="btext">
-            <strong>IMPORTANTE</strong>: Antes do primeiro carregamento de plafond, o estudante deverá efetuar oprimeiro acesso à plataforma, realizando os passos descritos nos n.ºs 1 e 2.
-            Através da plataforma o estudante terá acesso às seguintes funcionalidades: reserva de senha, anulação de senha, listagem de aquisições e listagem de carregamentos.<br>
-            <br>
-            <u>NOTA</u>: Os espaços dos refeitórios, no Campus do IPCA e no Polo de Braga, fora do horário de refeições, podem ser utilizados para sala de convívio e estudo em grupo.
-          </div>
-          <h5>Bares</h5>
-          <div class="btext">
-            No Campus do IPCA existem 3 bares, localizados no edifício da Cantina, da Escola Superior de Gestão e da Escola Superior de Design. O Polo de Braga dispõe de um bar. A Comunidade Académica do IPCA tem, nestes espaços, acesso ao serviço de cafetaria, pastelaria e snacks, a preços sociais.
-          </div>
-          <h5>Copas</h5>
-          <div class="btext">
-            As Copas são espaços existentes no Campus do IPCA (Edifício da Cantina), no Polo de Braga, no Polo de Guimarães e no Polo de Vila Nova de Famalicão, devidamente equipados (micro-ondas e frigorífico, este último só no Campus do IPCA), onde os estudantes podem guardar e aquecer refeições trazidas de casa.
-          </div>
-          <h5>Máquinas de Vending</h5>
-          <div class="btext">
-            No Campus do IPCA, no Polo de Braga, no Polo de Guimarães e no Polo de Vila Nova de Famalicão estão instaladas máquinas de vending, de forma a permitir que os estudantes possam usufruir de bebidas quentes e snacks, a qualquer momento, sem estarem dependentes dos horários de funcionamento das unidades alimentares do IPCA.
-          </div>
-        </div>
-    </body>
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <div class="main">
+    <h2>Horário Semanal de Refeições</h2>
+    <table class="table">
+      <tr>
+        <td></td>
+        <td>Segunda</td>
+        <td>Terça</td>
+        <td>Quarta</td>
+        <td>Quinta</td>
+        <td>Sexta</td>
+        <td>Sabado</td>
+        <td>Domingo</td>
+      </tr>
+      <tr>
+        <td>12:00 até<br>14:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>19:00 até<br>21:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <h2>Alimentação</h2>
+    <div class="btext">
+      Os SASIPCA garantem aos estudantes do IPCA o acesso a serviços de alimentação, através de unidades alimentares –
+      cantina e bares – onde são comercializados produtos a preços mais reduzidos que as empresas privadas similares,
+      não deixando, no entanto, de ter como objetivo principal o grau de satisfação dos utentes e a garantia do
+      cumprimento rigoroso das obrigações, bem como o cumprimento de todas as normas de higiene e segurança inerente ao
+      funcionamento de serviços desta natureza.
+    </div>
+    <h5>Cantina</h5>
+    <div class="btext">
+      O Campus do IPCA dispõe de uma cantina situada no Edifício dos SASIPCA que disponibiliza almoços e jantares todos
+      os dias úteis e almoços aos sábados e o Polo de Braga possui um refeitório que serve almoços de 2.ª a 6.ª feira.
+      As refeições contemplam a opção de prato de carne, prato de peixe, prato de dieta e vegetariano. A refeição tem o
+      preço de 2,50€ (compra antecipada). Pode haver compra de senha de refeição “na hora”, pelo valor de 3,75€.<br>
+      Para <strong>adquirir senha de refeição</strong>, o estudante deverá primeiro carregar o seu plafond no Cantina
+      (carregamento mínimo 5€) e depois aceder à plataforma de aquisição de refeições, procedendo da seguinte forma:
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          > Aceder ao site dos Serviços de Ação Social http://www.sas.ipca.pt, –» link daalimentação; –» link cantina;
+          –» link Aquisição de Senha (lado direito da página)
+        </li>
+        <li class="list-group-item">
+          > Autenticar-se, usando os dados de autenticação da sua conta do IPCA;
+        </li>
+        <li class="list-group-item">
+          > Para escolher a refeição, definir: Cantina, Data, Tipo de refeição e Prato;
+        </li>
+        <li class="list-group-item">
+          > Terminar o processo com “Confirmar”, “Guardar” e “Finalizar”.
+        </li>
+      </ul>
+    </div>
+    <div class="btext">
+      <strong>IMPORTANTE</strong>: Antes do primeiro carregamento de plafond, o estudante deverá efetuar oprimeiro
+      acesso à plataforma, realizando os passos descritos nos n.ºs 1 e 2.
+      Através da plataforma o estudante terá acesso às seguintes funcionalidades: reserva de senha, anulação de senha,
+      listagem de aquisições e listagem de carregamentos.<br>
+      <br>
+      <u>NOTA</u>: Os espaços dos refeitórios, no Campus do IPCA e no Polo de Braga, fora do horário de refeições, podem
+      ser utilizados para sala de convívio e estudo em grupo.
+    </div>
+    <h5>Bares</h5>
+    <div class="btext">
+      No Campus do IPCA existem 3 bares, localizados no edifício da Cantina, da Escola Superior de Gestão e da Escola
+      Superior de Design. O Polo de Braga dispõe de um bar. A Comunidade Académica do IPCA tem, nestes espaços, acesso
+      ao serviço de cafetaria, pastelaria e snacks, a preços sociais.
+    </div>
+    <h5>Copas</h5>
+    <div class="btext">
+      As Copas são espaços existentes no Campus do IPCA (Edifício da Cantina), no Polo de Braga, no Polo de Guimarães e
+      no Polo de Vila Nova de Famalicão, devidamente equipados (micro-ondas e frigorífico, este último só no Campus do
+      IPCA), onde os estudantes podem guardar e aquecer refeições trazidas de casa.
+    </div>
+    <h5>Máquinas de Vending</h5>
+    <div class="btext">
+      No Campus do IPCA, no Polo de Braga, no Polo de Guimarães e no Polo de Vila Nova de Famalicão estão instaladas
+      máquinas de vending, de forma a permitir que os estudantes possam usufruir de bebidas quentes e snacks, a qualquer
+      momento, sem estarem dependentes dos horários de funcionamento das unidades alimentares do IPCA.
+    </div>
+  </div>
+</body>
+
 </html>
