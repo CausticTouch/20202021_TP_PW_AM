@@ -83,3 +83,11 @@ a:visited{
 #dectd{
   max-width: 160px;
 }
+#customul{
+  background-color: transparent;
+}
+#ipcalogo{
+  height: auto;
+  width: 80px;
+  object-fit: scale-down;
+}
